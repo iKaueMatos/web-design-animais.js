@@ -1,0 +1,10 @@
+
+
+.animais-lista::-webkit-scrollbar{
+    width: 18px;
+}
+
+.animais-lista::-webkit-scrollbar-thumb{
+    background: rgb(240, 205, 6);
+    border-left: 4px solid #faf6ed;
+}
