@@ -26,6 +26,11 @@ body{
    
 }
 
+.dark{
+    background: rgb(46, 44, 44);
+}
+
+
 .menu{
     grid-column: 3/5;
     margin-top:2rem;
@@ -179,6 +184,7 @@ body{
     font-family: 'roboto',Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
+
 
 @media (max-width: 700px) {
     body {
