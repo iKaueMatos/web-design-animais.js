@@ -19,7 +19,7 @@ ul {
 body{
     display: grid;
     grid-template-columns:1fr 120px minmax(300px,800px) 1fr;
-    background-color: #faf6ed;
+    background-color: #ffffff;
     color: #222;
     font-family: 'roboto',Arial, sans-serif;
     -webkit-font-smoothing:anialiased
@@ -141,6 +141,13 @@ body{
 
 .mapa{
     grid-column: 2;
+    
+}
+
+.mapa img{
+    border-radius: 10px;
+    width: 80%;
+    height: 100%;
 }
 
 .dados{
@@ -201,9 +208,16 @@ body{
     }
     .mapa{
         width: 400px;
+        
+    }
+
+    .mapa img{
+        border-radius: 10px;
+        width: 500px;
     }
     .animais p{
         font-size: 15px;
+       
 
     }
 
