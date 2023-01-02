@@ -1,0 +1,16 @@
+@import "../abstract/variaveis";
+
+.copy{
+    grid-column: 3 / 5 ;
+    margin-bottom: 2rem;
+    background: $cor-secudaria;
+    color: $font-color;
+    border-radius: 5px;
+    text-decoration: uppercase;
+}.copy p {
+    padding:20px;
+    font-family: $fonte-two,'arial';
+    font-weight: 520;
+    font-size: 18;
+  
+}

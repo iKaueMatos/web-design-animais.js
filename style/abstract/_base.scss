@@ -1,0 +1,14 @@
+@import "./variaveis";
+
+body,h1,h2,ul,li,p,dd,dt,dl{
+    margin: 0;
+    padding: 0;
+}body{
+    display: grid;
+    grid-template-columns:1fr 120px minmax(300px,800px) 1fr;
+    background-color: $cor-fundo;
+    color: $font-color;
+    font-family: $fonte-body;
+    -webkit-font-smoothing:anialiased
+   
+}
