@@ -1,2 +1,11 @@
-# web-design-animais.js
-Olá pessoal tudo bem? hoje trago aqui pra vocês um projeto que esta na faze de desenvolvimento mais que ja esta bem legal consiste em melhorar o desenvolvimento de web sites utilizando JavaScript 
+Resumo do projeto:
+
+🔨 Funcionalidades do projeto:
+
+Funcionalidade 1:
+
+Funcionalidade 2: Funcionalidade 3: Funcionalidade 4: Funcionalidade 5:
+
+✔️ Técnicas e tecnologias utilizadas:
+
+📁 Acesso ao projeto Você pode acessar os arquivos do projeto clicando aqui:https://ikauematos.github.io/web-design-animais.js/
