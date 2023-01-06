@@ -1,4 +1,5 @@
 @import '../abstract/variaveis';
+@import '../abstract/scroll';
 
 
 
@@ -6,7 +7,16 @@ img {
     display: block;
     max-width: 100%;
     border-radius: 5px;
-}.grid-section{
+    } .titulo{
+        font-family:$fonte-two;
+        font-size:6rem;
+        line-height: 1.5;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        grid-column: 1 / 4;
+        margin-left: 6rem;
+        text-align: justify;
+    }.grid-section{
     grid-column: 2 /4;
     width: 100%;
     box-sizing: border-box;
@@ -15,16 +25,62 @@ img {
     grid-template-columns: 100px 300px 1fr;
     grid-gap: 20px;
     margin-bottom: 4rem;
+    }.animais-lista{
+        height: 370px;
+        overflow-y: scroll;
+        grid-column:2 ;
+        border-radius: 5px;
+        &::-webkit-scrollbar,::-webkit-scrollbar-thumb{
+            width: 15px;
+            background: $cor-secudaria;
+            border-left: 4px solid #faf6ed;
+        }
+    }.animais h2{
+        font-family:$fonte-body;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+        margin-bottom: 1rem;
+        color:$cor-quarta-animais;
+        &::before{
+            content: '';
+            display: inline-block;
+            width: 40px;
+            height: 10px;
+            margin-right: 10px;
+            background: $cor-secudaria;
+            } .animais p {
+                font-family: $font-one;
+                line-height: 1.2;
+                margin-bottom: 1rem;
+                font-size: 18px;
+                text-align:justify;
+                .animais-descricao section{
+                margin-bottom: 3rem;
 
-}.titulo{
-    font-family:$fonte-two;
-    font-size:6rem;
-    line-height: 1.5;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    grid-column: 1 / 4;
-    margin-left: 6rem;
-    text-align: justify;
-}
+.js .js-tabcontent section {
+    display: none;
+  }
+  
+  .js-tabcontent section.ativo {
+    display: block !important;
+    animation: show .5s forwards;
+  }
+  
+  @keyframes show {
+    from {
+      opacity: 0;
+      transform: translate3d(-30px, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+         }.animais-descricao {
+                grid-column: 3;   
+                }      
+            }
+        }
 
 

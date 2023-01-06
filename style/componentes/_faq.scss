@@ -19,6 +19,34 @@
             font-family: 'roboto',Arial, Helvetica, sans-serif;
             margin-bottom:.5rem;
             margin-left:30px;
+            .js .js-accordion dd {
+                display: none;
+              }
+              
+              .js-accordion dt::after {
+                content: '⬎';
+                margin-left: 10px;
+              }
+              
+              .js-accordion dt.ativo::after {
+                content: '⬏';
+              }
+              
+              .js-accordion dd.ativo {
+                display: block;
+                animation: slideDown .5s forwards;
+              }
+              
+              @keyframes slideDown {
+                from {
+                  opacity: 0;
+                  max-height: 0;
+                }
+                to {
+                  max-height: 200px;
+                  opacity: 1;
+                }
+              }
         }.dados{
             grid-column: 3;
         }li{
