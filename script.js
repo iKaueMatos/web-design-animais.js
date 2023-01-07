@@ -68,16 +68,18 @@ const initkeyboard = () =>{
 //Scroll
   const scroll = () =>{
 
-    const linksinternos = document.querySelectorAll('.js-menua[href^="#"]')
-
+    const linksinternos = document.querySelectorAll('.js-menu a[href^="#"]')
 
     function scrollTosection(event){
       event.preventDefault();
-      const href = event.currentTarget.getAttribute;
+      const href = event.currentTarget.getAttribute('href');
       const section = document.querySelector(href);
-      console.log(section.offseTop);
-      window.scrollTo(0,1000);
-    }
+  
+    section.scrollIntoView({
+      behavior:'smooth',
+      block:'start',
+    });
+  }
 
 
     linksinternos.forEach((links)=>{
@@ -87,3 +89,20 @@ const initkeyboard = () =>{
   }
 
 scroll()
+
+
+//Scroll animado
+const sections = document.querySelectorAll('.js-scroll');
+
+
+function animaScroll(){
+    sections.forEach((section) =>{
+      const sectionTop = section.getBoundingClientRect().top;
+      console.log(sectionTop)
+      if(sectionTop < 0 || sectionTop > 0 ){
+        section.classList.add('ativo')
+      }
+    })
+}
+
+window.addEventListener('scroll',animaScroll)

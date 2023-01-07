@@ -1,3 +1,5 @@
+@import url('./scroll.css');
+
 body, h1, h2, ul, li, p, dd, dt, dl {
   margin: 0px;
   padding: 0px;
@@ -155,6 +157,7 @@ body {
 
 .mapa {
   grid-column: 2;
+  
 }
 
 .dados {
@@ -179,6 +182,7 @@ body {
   grid-column: 3/5;
   margin-bottom: 2rem;
   background: rgb(6, 223, 223);
+  border-radius: 8px;
 }
 
 .copy p {
@@ -262,4 +266,19 @@ body {
     max-height: 200px;
     opacity: 1;
   }
+}
+
+.js .js-scroll{
+  opacity: 0;
+  transform: translate3d(-30px,0,0);
+  transition: .3s;
+}
+
+.js .js-scroll.ativo {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
+
+.js .js-scroll.ativo .mapa img{
+  opacity: 1;
 }
